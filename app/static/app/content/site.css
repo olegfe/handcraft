@@ -1,0 +1,559 @@
+body {
+	padding-top: 50px;
+	padding-bottom: 20px;
+	font-family: Arial, sans-serif;
+}
+
+.container {
+	margin:0 auto;
+	max-width:1200px;
+	width:1200px;
+
+	
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/* styles for validation helpers */
+.field-validation-error {
+    color: #b94a48;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+input.input-validation-error {
+    border: 1px solid #b94a48;
+}
+
+input[type="checkbox"].input-validation-error {
+    border: 0 none;
+}
+
+.validation-summary-errors {
+    color: #b94a48;
+}
+
+.validation-summary-valid {
+    display: none;
+}
+.images {
+    width:1200px;
+    height:200px;
+    display:flex;
+    justify-content: space-between;
+	position:relative;
+}
+
+.client1 p {
+	width:293px;
+	
+}
+.client2 p {
+	width: 293px;
+	
+}
+.client3 p {
+	width: 293px;
+	
+}
+
+ p {
+	font-size:16px;
+	font-weight:300;
+}
+	
+
+						/* page posts*/
+
+
+.blog_page_display {
+	margin:0 auto;
+	margin-top:25px;
+	background-color:darkseagreen;
+	width:1200px;
+	display:flex;
+	justify-content:space-between;
+	padding:5px;
+	padding-left:10px;
+	border-radius:25px;
+	
+}
+
+
+.blog_page a {
+	margin:0 auto;
+	margin-top:25px;
+	padding:5px;
+	color:black;
+	background-color:white;
+	border-radius:10px;
+	text-transform:uppercase;
+	text-decoration:none;
+}
+
+.blog_page h2 {
+	font-weight:700;
+}
+
+.blog_page h4 {
+	font-weight: 200;
+	font-size:12px;
+}
+
+.blog_page p {
+	font-weight: 400;
+	font-size: 14px;
+}
+
+.title_page h2 {
+	font-size:24px;
+	font-weight:200;
+}
+
+/* video page*/
+
+.video_page div {
+	display:flex;
+	justify-content:space-between;
+}
+.container h1 {
+	font-weight:700;
+	margin:0;
+	margin-top:25px;
+	margin-bottom:25px;
+}
+.video_page video {
+	margin:0;
+	padding:0;
+}
+
+.videos {
+	margin:0;
+}
+
+
+
+/* nav in the top*/
+
+.nav navbar-nav a {
+	font-weight:500;
+	color:white;
+}
+
+					/*Comments*/
+
+.comment h7{
+	color:gray;
+	font-size:12px;
+}
+
+.comment h4 {
+	color: black;
+	font-weight:400;
+	font-size:18px;
+	
+
+}
+.comment h5 {
+	color: black;
+	font-weight: 800;
+	font-size: 12px;
+}
+
+/*Anketa*/
+
+.forma_anketa label {
+	border-radius:5px;
+}
+
+.form_name {
+	border-radius:5px;
+}
+
+/*About us*/
+
+.metod_rab {
+	margin: 0 auto;
+	padding: 30px;
+	margin-top: 70px;
+	z-index: 1;
+	background-color: #E7D8FA;
+	height: 250px;
+}
+
+.metod_rab h1 {
+		color: #1A142E;
+}
+
+.metod_rab h2 {
+		color: #1A142E;
+		margin: 0;
+		font-weight: 700;
+		margin-left: 50px;
+		position: relative;
+}
+
+.fast_img {
+	margin: 0;
+	position: absolute;
+	top: 29%;
+	left: 16%;
+	z-index: 1;
+}
+
+.methods {
+	
+	display: flex;
+}
+
+.methods_item {
+	margin: 20px;
+	flex: 1 1 0;
+	text-align: center;
+	display: table-cell;
+	vertical-align: middle;
+}
+
+.methods_method {
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.about_method {
+	text-align: center;
+	font-size: 14px;
+}
+
+
+
+.title {
+	text-align: center;
+	margin-top: 50px;
+	font-size: 32px;
+	font-weight: 500;
+}
+
+.title_pol p {
+	font-size:24px;
+	font-weight:300;
+}
+
+.title_pol h1 {
+	font-weight:700;
+	font-size:32px;
+}
+
+/*стили base перенес все кроме body*/
+a {
+    text-decoration: none;
+    color: #5993bb;
+}
+
+    a:hover {
+        color: #77b6e2;
+    }
+
+    a.button, input[type="submit"] {
+        color: #fff;
+        background: #5993bb;
+        border-radius: 4px;
+        padding: 10px 20px;
+        font-size: 14px;
+        border: 0;
+    }
+
+        a.button.light {
+            color: #666;
+            background: #ededed;
+        }
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+table {
+    width: 100%;
+    border-spacing: 0;
+    border-collapse: collapse;
+}
+
+    table th, table td {
+        text-align: left;
+        font-size: 14px;
+        padding: 10px;
+        margin: 0;
+    }
+
+tbody tr:nth-child(odd) {
+    background: #efefef;
+}
+
+tbody tr.subtotal {
+    background: #ccc;
+}
+
+thead th, tbody tr.total {
+    background: #5993bb;
+    color: #fff;
+    font-weight: bold;
+}
+
+table.cart {
+    margin-bottom: 40px;
+}
+
+    table.cart img {
+        width: 180px;
+    }
+
+tbody td.num {
+    text-align: right;
+}
+
+td input[type="submit"] {
+    font-size: 12px;
+    padding: 4px 10px;
+}
+
+form p label, form p input {
+    float: left;
+    clear: both;
+}
+
+form p label {
+    font-size: 14px;
+    padding-bottom: 4px;
+}
+
+form p input {
+    width: 300px;
+    font-size: 13px;
+    margin-bottom: 10px;
+    padding: 10px 12px;
+    border: 0;
+    background: #efefef;
+    color: #666;
+    border-radius: 4px;
+}
+
+ul.errorlist {
+    float: left;
+    color: #ff0000;
+    clear: both;
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+}
+
+
+#header {
+    padding: 10px 100px;
+    font-size: 18px;
+    overflow: auto;
+}
+
+#subheader {
+    background: #ececec;
+    color: #444;
+    padding: 15px 100px;
+    overflow: auto;
+}
+
+#header .logo {
+    font-family: 'Ubuntu', sans-serif;
+    float: left;
+    color: #333;
+    font-size: 22px;
+    margin-right: 10%;
+}
+
+#subheader .cart {
+    float: right;
+    padding-top: 4px;
+}
+
+#content {
+    padding: 0 100px;
+    overflow: hidden;
+}
+
+#sidebar {
+    width: 220px;
+    padding: 30px 20px 0 0;
+    float: left;
+}
+
+    #sidebar ul {
+        margin: 0;
+        padding: 0;
+    }
+
+        #sidebar ul li {
+            margin: 0;
+            list-style: none;
+            padding: 10px 14px;
+        }
+
+            #sidebar ul li a {
+                display: block;
+            }
+
+            #sidebar ul li.selected {
+                background: #5993bb;
+                border-radius: 4px;
+            }
+
+                #sidebar ul li.selected a {
+                    color: #fff;
+                }
+
+#main {
+    float: left;
+    width: 96%;
+    margin-right: -220px;
+    overflow: hidden;
+}
+
+.product-list .item {
+    width: 25%;
+    padding: 10px 20px 10px 0;
+    float: left;
+    text-align: center;
+    line-height: 1.2;
+}
+
+    .product-list .item img {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+
+.product-detail {
+    text-align: justify;
+}
+
+    .product-detail .price {
+        color: #333;
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .product-detail img {
+        width: 40%;
+        float: left;
+        padding: 0 20px 20px 0;
+    }
+
+    .product-detail h1 {
+        margin-bottom: 0;
+    }
+
+    .product-detail h2 {
+        margin-top: 10px;
+    }
+
+.order-form {
+    float: left;
+}
+
+.order-info {
+    float: right;
+    width: 300px;
+    background: #efefef;
+    padding: 10px 20px;
+    color: #333;
+    border-bottom: 4px solid #5993bb;
+}
+
+    .order-info h3 {
+        color: #5993bb;
+    }
+
+    .order-info ul li {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+
+    .order-info p {
+        font-weight: bold;
+        float: right;
+    }
+
+    .order-info span {
+        float: right;
+    }
+
+.neg {
+    color: #dc1616;
+}
+
+.languages {
+    float: right;
+    padding-top: 4px;
+    font-size: 14px;
+}
+
+    .languages ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        float: left;
+    }
+
+        .languages ul li {
+            float: left;
+            margin: 0 0 0 10px;
+            font-size: 14px;
+        }
+
+    .languages p {
+        float: left;
+        margin: 0;
+    }
+
+.recommendations {
+    clear: both;
+}
+
+    .recommendations div {
+        float: left;
+    }
+
+    .recommendations img {
+        width: 200px
+    }
+
+    .recommendations p {
+        clear: both;
+    }
+
+    .recommendations.cart {
+        width: 60%;
+        float: left;
+        overflow: auto;
+    }
+
+        .recommendations.cart h3 {
+            margin-top: 0;
+        }
+
+        .recommendations.cart .item {
+            margin-right: 10px;
+        }

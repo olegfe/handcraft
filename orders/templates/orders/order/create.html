@@ -1,0 +1,29 @@
+﻿{% extends "app/layout.html" %}
+
+{% block title %}Checkout{% endblock %}
+
+{% block content %}
+    <h1>Оформление заказа</h1>
+    <div class="order-info">
+        <h3>Ваш заказ</h3>
+        <ul>
+            {% for item in cart %}
+                <li>
+                    {{ item.quantity }}x {{ item.product.name }}
+                    <span>${{ item.total_price }}</span>
+                </li>
+            {% endfor %}
+        </ul>
+        <p>К оплате: ${{ cart.get_total_price }}</p>
+    </div>
+    <form action="." method="post" class="order-form">
+         <p><label for="id_first_name">Имя:</label> <input type="text" name="first_name" maxlength="50" required id="id_first_name" /></p>
+        <p><label for="id_last_name">Фамилия:</label> <input type="text" name="last_name" maxlength="50" required id="id_last_name" /></p>
+        <p><label for="id_email">Email:</label> <input type="email" name="email" maxlength="254" required id="id_email" /></p>
+        <p><label for="id_address">Адрес:</label> <input type="text" name="address" maxlength="250" required id="id_address" /></p>
+        <p><label for="id_postal_code">Почтовый индекс:</label> <input type="text" name="postal_code" maxlength="20" required id="id_postal_code" /></p>
+        <p><label for="id_city">Город:</label> <input type="text" name="city" maxlength="100" required id="id_city" /></p>
+        <p><input type="submit" value="Разместить заказ"></p>
+        {% csrf_token %}
+    </form>
+{% endblock %}

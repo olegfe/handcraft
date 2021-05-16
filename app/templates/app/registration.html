@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    {% extends "app/layout.html" %}
+
+{% block content %}
+
+<h2>Регистрация пользователя</h2>
+
+<form method="POST" > {% csrf_token %}
+
+<div>
+
+{{ regform.as_p}}
+
+<button type="submit" class="save btn btn-default" > Зарегистрировать </button>
+
+</div>
+
+</form>
+
+{% endblock %}
+</body>
+</html>

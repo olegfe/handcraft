@@ -1,0 +1,54 @@
+﻿{% extends 'app/layout.html' %}
+
+
+{% block content %}
+
+
+
+
+<a href="admin/orders/order" >Перейти к редактированию заказов</a>
+
+
+
+<table>
+<tr>
+<td colspan="2">id Заказа</td>
+
+
+
+
+<td colspan="2">email</td>
+<td colspan="2">Город</td>
+<td colspan="2">Почтовый индекс</td>
+<td colspan="2">Дата заказа</td>
+<td colspan="2">Статус оплаты</td>
+
+</tr>
+{% for order in users_orders %}
+
+
+
+
+<tr>
+<td colspan="2"><b>{{order.id}}</b></td>
+<td colspan="2"><b>{{order.email}}</b></td>
+
+<td colspan="2"><b>{{order.city}}</b></td>
+<td colspan="2"><b>{{order.postal_code}}</b></td>
+
+<td colspan="2"><b>{{order.created}}</b></td>
+{% if order.paid %}
+<td colspan="2"><b>Оплачен</b></td>
+{% else %}
+<td colspan="2"><b>Не оплачен</b></td>
+{% endif %}
+
+
+</tr>
+
+{% endfor %}
+
+
+</table>
+
+{% endblock %}

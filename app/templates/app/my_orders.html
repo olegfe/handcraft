@@ -1,0 +1,45 @@
+﻿ 
+{% extends 'app/layout.html' %}
+
+
+{% block content %}
+
+
+<table>
+<tr>
+<td colspan="2">Вы заказывали товар</td>
+
+
+<td colspan="2">На сумму</td>
+
+<td colspan="2">Дата заказа</td>
+</tr>
+{% for order in orders %}
+{% for item in order_item %}
+
+
+
+<tr>
+<td colspan="2"><b>{{item.product}}</b></td>
+    <td colspan="2"><b>{{item.price}}</b></td>
+<td colspan="2"><b>{{order.created}}</b></td>
+
+</tr>
+
+{% endfor %}
+    {% endfor %}
+
+</table>
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock %}
